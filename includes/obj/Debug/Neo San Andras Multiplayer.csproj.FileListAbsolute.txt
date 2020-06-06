@@ -1,0 +1,24 @@
+C:\Users\andre\source\repos\Neo San Andras Multiplayer\Neo San Andras Multiplayer\bin\Debug\Neo San Andras Multiplayer.exe.config
+C:\Users\andre\source\repos\Neo San Andras Multiplayer\Neo San Andras Multiplayer\bin\Debug\Neo San Andras Multiplayer.exe
+C:\Users\andre\source\repos\Neo San Andras Multiplayer\Neo San Andras Multiplayer\bin\Debug\Neo San Andras Multiplayer.pdb
+C:\Users\andre\source\repos\Neo San Andras Multiplayer\Neo San Andras Multiplayer\bin\Debug\MetroFramework.dll
+C:\Users\andre\source\repos\Neo San Andras Multiplayer\Neo San Andras Multiplayer\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\andre\source\repos\Neo San Andras Multiplayer\Neo San Andras Multiplayer\obj\Debug\Neo_San_Andras_Multiplayer.Form1.resources
+C:\Users\andre\source\repos\Neo San Andras Multiplayer\Neo San Andras Multiplayer\obj\Debug\Neo_San_Andras_Multiplayer.Properties.Resources.resources
+C:\Users\andre\source\repos\Neo San Andras Multiplayer\Neo San Andras Multiplayer\obj\Debug\Neo San Andras Multiplayer.csproj.GenerateResource.cache
+C:\Users\andre\source\repos\Neo San Andras Multiplayer\Neo San Andras Multiplayer\obj\Debug\Neo San Andras Multiplayer.csproj.CoreCompileInputs.cache
+C:\Users\andre\source\repos\Neo San Andras Multiplayer\Neo San Andras Multiplayer\obj\Debug\Neo San Andras Multiplayer.csproj.CopyComplete
+C:\Users\andre\source\repos\Neo San Andras Multiplayer\Neo San Andras Multiplayer\obj\Debug\Neo San Andras Multiplayer.exe
+C:\Users\andre\source\repos\Neo San Andras Multiplayer\Neo San Andras Multiplayer\obj\Debug\Neo San Andras Multiplayer.pdb
+C:\Users\andre\source\repos\Neo San Andras Multiplayer\Neo San Andras Multiplayer\obj\Debug\Neo_San_Andras_Multiplayer.Form2.resources
+C:\Users\andre\source\repos\Neo San Andras Multiplayer\Neo San Andras Multiplayer\obj\Debug\Neo_San_Andras_Multiplayer.UserControl1.resources
+C:\Users\andre\source\repos\Neo San Andras Multiplayer\Neo San Andras Multiplayer\obj\Debug\Neo_San_Andras_Multiplayer.UserControl2.resources
+C:\Users\andre\source\repos\Neo San Andras Multiplayer\Neo San Andras Multiplayer\obj\Debug\Neo_San_Andras_Multiplayer.UserControl3.resources
+C:\Users\andre\source\repos\Neo San Andras Multiplayer\Neo San Andras Multiplayer\obj\Debug\Neo_San_Andras_Multiplayer.Form3.resources
+C:\Users\andre\source\repos\Neo San Andras Multiplayer\Neo San Andras Multiplayer\obj\Debug\Neo_San_Andras_Multiplayer.Loading_Files.resources
+C:\Users\andre\source\repos\Neo San Andras Multiplayer\Neo San Andras Multiplayer\obj\Debug\Neo_San_Andras_Multiplayer.UserControl6.resources
+C:\Users\andre\source\repos\Neo San Andras Multiplayer\Neo San Andras Multiplayer\obj\Debug\Neo San Andras Multiplayer.csprojAssemblyReference.cache
+C:\Users\andre\source\repos\Neo San Andras Multiplayer\Neo San Andras Multiplayer\obj\Debug\Neo_San_Andras_Multiplayer.Form4.resources
+C:\Users\andre\source\repos\Neo San Andras Multiplayer\Neo San Andras Multiplayer\obj\Debug\Neo_San_Andras_Multiplayer.Settings_Personalization.resources
+C:\Users\andre\source\repos\Neo San Andras Multiplayer\Neo San Andras Multiplayer\obj\Debug\Neo_San_Andras_Multiplayer.Advanced_settings.resources
+C:\Users\andre\source\repos\Neo San Andras Multiplayer\Neo San Andras Multiplayer\obj\Debug\Neo_San_Andras_Multiplayer.About.resources
