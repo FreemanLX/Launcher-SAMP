@@ -1,5 +1,5 @@
 # Launcher International, his alias NeoSAMP
-A new launcher for GTA San Andreas Multiplayer. Please note, there you ll see almost all code, except the connection code, and the connection pop up
+A new launcher for GTA San Andreas Multiplayer. Please note, there you ll see almost all code, except the connection code, and the connection pop up. If you want to try to see even this code, just send an email to andreasmihalea@gmail.com, and I will give you, after asking some questions.
 
 <b> Launcher SA:MP Beta 0.0.8.1 </b>
  + Fixed bugs where appears at loading and closing this app.
