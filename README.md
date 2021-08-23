@@ -1,5 +1,15 @@
-# Launcher International, his alias NeoSAMP
-A new launcher for GTA San Andreas Multiplayer. Please note, there you ll see almost all code, except the connection code, and the connection pop up. If you want to try to see even this code, just send an email to andreasmihalea@gmail.com, and I will give you, after asking some questions.
+# Launcher SAMP, his alias NeoSAMP
+A new launcher for GTA San Andreas Multiplayer. 
+
+<b> Launcher SA:MP Beta 0.1.0.0 </b>
+ + Optimized and fixed almost all menus and submenus.
+ + Now the data will be saved on Documents right now as file document, in the next release it will be in xml.
+ + The connect form will not freeze anymore because right now the UDP communication is now asynced and multithreaded.
+ + Now you can use different ports not only :7777
+ + I splited up the section "Chatlog and Screenshots" in two sections.
+ + Made a background thread by saving automatically the data if it was changed and reupdates the connection with the selected server.
+ + Now you can run on different GTA SA modpacks without copying local (see the advanced settings).
+ - Removed the ethernet verification form, it will be reintroduced later.
 
 <b> Launcher SA:MP Beta 0.0.8.1 </b>
  + Fixed bugs where appears at loading and closing this app.
