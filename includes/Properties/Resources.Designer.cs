@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Neo_San_Andras_Multiplayer.Properties {
+namespace LauncherSAMPInt.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Neo_San_Andras_Multiplayer.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Neo_San_Andras_Multiplayer.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("LauncherSAMPInt.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -47,7 +47,7 @@ namespace Neo_San_Andras_Multiplayer.Properties {
         }
         
         /// <summary>
-        ///   Overrides the current thread's CurrentUICulture property for all
+        ///   Overrides the current thread's CurrentUICulture property for Counter
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]

@@ -4,7 +4,7 @@ using System.Runtime.InteropServices;
 using System.Security;
 
 
-namespace Neo_San_Andras_Multiplayer
+namespace LauncherSAMPInt
 {
     public static class Kernel32
     {

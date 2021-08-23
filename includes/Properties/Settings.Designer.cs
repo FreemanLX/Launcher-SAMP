@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Neo_San_Andras_Multiplayer.Properties
+namespace LauncherSAMPInt.Properties
 {
 
 

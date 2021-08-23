@@ -1,56 +1,67 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 using System.Windows.Forms;
 
-namespace Neo_San_Andras_Multiplayer
+namespace LauncherSAMPInt
 {
     public partial class Advanced_settings : UserControl
     {
-#pragma warning disable IDE1006 // Naming Styles
-        public Advanced_settings()
+        public Advanced_settings() => InitializeComponent();
+        
+        private void BackClick(object sender, EventArgs e)
         {
-            InitializeComponent();
-        }
-
-#pragma warning disable IDE0017 // Naming Styles
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            var x = new UserControl1();
-            x.Location = new Point(145, 72);
-            this.Parent.Controls.Add(x);
-            this.Dispose();
+            if(metroToggle2.Checked == true && string.IsNullOrWhiteSpace(TextLocation.Text))
+            {
+                Thread MessageSTAThread = 
+                    new Thread(() =>
+                    MessageBox.Show("Select a location for GTA San Andreas, or disable different directory to use the local folder", "Select GTA San Andreas Folder"))
+                    #pragma warning disable CS0618 // Type or member is obsolete
+                    { ApartmentState = ApartmentState.STA };
+                    #pragma warning restore CS0618 // Type or member is obsolete
+                MessageSTAThread.Start();
+                return;
+            }
+            Data.defaultform_generally.ContentPanel.Controls.Remove(Data.defaultform_generally.ContentPanel.GetControlFromPosition(1, 0));
+            Data.defaultform_generally.ContentPanel.Controls.Add(new Settings { Dock = DockStyle.Fill }, 1, 0);
+            Dispose();
         }
 
         private void Advanced_settings_Load(object sender, EventArgs e)
         {
-            Reading q = new Reading();
-            bool s = q.recieve("Close");
-            metroToggle1.Checked = s;
-            s = q.recieve("Location");
-            metroToggle2.Checked = s;
+            metroToggle1.Checked = Data.reading["Close"];
+            BrowseLocation.Visible = TextLocation.Visible = LabelLocation.Visible = metroToggle2.Checked = Data.reading["Location"];
+            if(TextLocation.Visible == true)
+            {
+                TextLocation.Text = Data.GTALocation;
+            }
         }
 
-        private void metroToggle1_CheckedChanged(object sender, EventArgs e)
+        private void ClosingToggle_CheckedChanged(object sender, EventArgs e) => Data.reading["Close"] = metroToggle1.Checked;
+
+        private void LocationToggle_CheckedChanged(object sender, EventArgs e)
         {
-            Reading q = new Reading("Close", metroToggle1.Checked);
+            Data.reading["Location"] = metroToggle2.Checked;
+            BrowseLocation.Visible = TextLocation.Visible = LabelLocation.Visible = metroToggle2.Checked;
         }
 
-        private void metroToggle2_CheckedChanged(object sender, EventArgs e)
+        private void BrowseLocation_Click(object sender, EventArgs e)
         {
-            Reading q = new Reading("Location", metroToggle2.Checked);
-        }
-
-        private void metroToggle3_CheckedChanged(object sender, EventArgs e)
-        {
-            Reading q = new Reading("Beta", metroToggle2.Checked);
+            Thread STAFileThread = new Thread(() =>
+            {
+                using (var fbd = new FolderBrowserDialog())
+                {
+                    if (fbd.ShowDialog() == DialogResult.OK && 
+                            !string.IsNullOrWhiteSpace(fbd.SelectedPath))
+                    {
+                            Invoke(new Action(()=>
+                            TextLocation.Text = fbd.SelectedPath));
+                            Data.GTALocation = TextLocation.Text;
+                    }
+                }
+            });
+            STAFileThread.SetApartmentState(ApartmentState.STA);
+            STAFileThread.Start();
+            
         }
     }
 }
-#pragma warning restore IDE1006 // Naming Styles

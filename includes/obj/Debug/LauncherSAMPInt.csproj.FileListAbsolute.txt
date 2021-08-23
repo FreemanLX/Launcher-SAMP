@@ -22,3 +22,27 @@ D:\Launcher SAMP International\includes\obj\Debug\LauncherSAMPInt.csproj.CoreCom
 D:\Launcher SAMP International\includes\obj\Debug\LauncherSAMPInt.csproj.CopyComplete
 D:\Launcher SAMP International\includes\obj\Debug\LauncherSAMPInt.exe
 D:\Launcher SAMP International\includes\obj\Debug\LauncherSAMPInt.pdb
+E:\Downloads\NeoSAMP-master\includes\obj\Debug\LauncherSAMPInt.exe
+E:\Downloads\NeoSAMP-master\includes\obj\Debug\LauncherSAMPInt.pdb
+E:\Downloads\NeoSAMP-master\includes\obj\Debug\LauncherSAMPInt.Properties.Resources.resources
+E:\Downloads\NeoSAMP-master\includes\obj\Debug\LauncherSAMPInt.csproj.GenerateResource.cache
+E:\Downloads\NeoSAMP-master\includes\obj\Debug\LauncherSAMPInt.csproj.CoreCompileInputs.cache
+E:\Downloads\NeoSAMP-master\includes\bin\Debug\LauncherSAMPInt.exe.config
+E:\Downloads\NeoSAMP-master\includes\bin\Debug\LauncherSAMPInt.exe
+E:\Downloads\NeoSAMP-master\includes\bin\Debug\MetroFramework.dll
+E:\Downloads\NeoSAMP-master\includes\obj\Debug\LauncherSAMPInt.csproj.CopyComplete
+E:\Downloads\NeoSAMP-master\includes\bin\Debug\LauncherSAMPInt.pdb
+E:\Downloads\NeoSAMP-master\includes\obj\Debug\LauncherSAMPInt.About.resources
+E:\Downloads\NeoSAMP-master\includes\obj\Debug\LauncherSAMPInt.Advanced_settings.resources
+E:\Downloads\NeoSAMP-master\includes\obj\Debug\LauncherSAMPInt.Loading_Files.resources
+E:\Downloads\NeoSAMP-master\includes\obj\Debug\LauncherSAMPInt.Settings_Personalization.resources
+E:\Downloads\NeoSAMP-master\includes\obj\Debug\LauncherSAMPInt.Settings.resources
+E:\Downloads\NeoSAMP-master\includes\obj\Debug\LauncherSAMPInt.Connect_Form.resources
+E:\Downloads\NeoSAMP-master\includes\obj\Debug\LauncherSAMPInt.Chatlog.resources
+E:\Downloads\NeoSAMP-master\includes\obj\Debug\LauncherSAMPInt.csprojAssemblyReference.cache
+E:\Downloads\NeoSAMP-master\includes\obj\Debug\LauncherSAMPInt.Connect_to_Server.resources
+E:\Downloads\NeoSAMP-master\includes\obj\Debug\LauncherSAMPInt.DefaultForm.resources
+E:\Downloads\NeoSAMP-master\includes\obj\Debug\LauncherSAMPInt.AddServer.resources
+E:\Downloads\NeoSAMP-master\includes\obj\Debug\LauncherSAMPInt.Screenshots.resources
+E:\Downloads\NeoSAMP-master\includes\bin\Debug\x86\sqlite3.dll
+E:\Downloads\NeoSAMP-master\includes\bin\Debug\x64\sqlite3.dll

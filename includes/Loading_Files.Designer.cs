@@ -1,4 +1,4 @@
-﻿namespace Neo_San_Andras_Multiplayer
+﻿namespace LauncherSAMPInt
 {
     partial class Loading_Files
     {
@@ -39,28 +39,27 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(124, 73);
+            this.pictureBox1.Location = new System.Drawing.Point(84, 73);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(166, 133);
+            this.pictureBox1.Size = new System.Drawing.Size(140, 120);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(6, 237);
+            this.metroLabel1.Location = new System.Drawing.Point(6, 222);
             this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(303, 38);
+            this.metroLabel1.Size = new System.Drawing.Size(152, 19);
             this.metroLabel1.TabIndex = 1;
-            this.metroLabel1.Text = "© AM 2020 - 2025 for Github\r\nPlease note you are not allowed to copy this code.";
+            this.metroLabel1.Text = "Powered by IntegrateOS";
             // 
             // Loading_Files
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(453, 282);
+            this.ClientSize = new System.Drawing.Size(308, 251);
             this.ControlBox = false;
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.pictureBox1);
@@ -72,7 +71,7 @@
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.Style = MetroFramework.MetroColorStyle.Teal;
-            this.Text = "Loading Launcher SA:MP International";
+            this.Text = "Loading Launcher SA:MP";
             this.Load += new System.EventHandler(this.Loading_Files_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
