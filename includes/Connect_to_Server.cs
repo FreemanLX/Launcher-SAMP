@@ -43,7 +43,6 @@ namespace LauncherSAMPInt
 
                     private void Connect_Click(object sender, EventArgs e)
                     {
-                          MessageBox.Show(Data.reading["Location"].ToString());
                           if (IsSAMPAvailable(Data.reading["Location"]))
                           {
                                 StringBuilder stringBuilder = new StringBuilder();
