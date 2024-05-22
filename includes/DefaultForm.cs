@@ -19,19 +19,8 @@ namespace LauncherSAMPInt
             Activate();
             DefaultButtons(ConnectButton);
             DefaultButtons(SettingsButton);
-            DefaultButtons(ChatlogButton);
-            DefaultButtons(button1);
-            button1.Font = ConnectButton.Font = SettingsButton.Font = 
-                ChatlogButton.Font = new System.Drawing.Font("Segoe UI Semilight", 12);
-            ContentPanel.Controls.Add(new Connect_Form { Dock = DockStyle.Fill }, 1, 0);
+            ContentPanel.Controls.Add(new ConnectForm { Dock = DockStyle.Fill }, 1, 0);
             Data.defaultform_generally = this;
-        }
-
-        protected override void OnClosed(EventArgs e)
-        {
-            Data.update.Abort();
-            Environment.Exit(0);
-            base.OnClosed(e);
         }
 
         public void LoadControl(UserControl userControl)
@@ -40,12 +29,8 @@ namespace LauncherSAMPInt
             ContentPanel.Controls.Add(userControl, 1, 0);
         }
 
-        private void ChatlogButton_Click(object sender, EventArgs e) => LoadControl(new Chatlog { Dock = DockStyle.Fill });
-
-        private void ConnectButton_Click(object sender, EventArgs e) => LoadControl(new Connect_Form { Dock = DockStyle.Fill });
+        private void ConnectButton_Click(object sender, EventArgs e) => LoadControl(new ConnectForm { Dock = DockStyle.Fill });
 
         private void SettingsButton_Click(object sender, EventArgs e) => LoadControl(new Settings { Dock = DockStyle.Fill });
-
-        private void ScreenshotsButton_Click(object sender, EventArgs e) => LoadControl(new Screenshots { Dock = DockStyle.Fill });
     }
 }

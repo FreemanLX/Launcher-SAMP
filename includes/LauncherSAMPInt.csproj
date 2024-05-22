@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\packages\SQLite.3.13.0\build\net45\SQLite.props" Condition="Exists('..\packages\SQLite.3.13.0\build\net45\SQLite.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -35,20 +34,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>a_205_a_incercare.ico</ApplicationIcon>
+    <ApplicationIcon>Resources\lampIcon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
-      <HintPath>..\packages\MetroFramework.RunTime.1.2.0.3\lib\net40-Client\MetroFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroFramework.Design, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
-      <HintPath>..\packages\MetroFramework.Design.1.2.0.3\lib\net40\MetroFramework.Design.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="MetroFramework.Fonts, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
-      <HintPath>..\packages\MetroFramework.Fonts.1.2.0.3\lib\net40\MetroFramework.Fonts.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -62,123 +50,76 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="About.cs">
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\Settings.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="About.Designer.cs">
-      <DependentUpon>About.cs</DependentUpon>
+    <Compile Include="Settings\Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
     </Compile>
-    <Compile Include="Advanced_settings.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Advanced_settings.Designer.cs">
-      <DependentUpon>Advanced_settings.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Algorithms.cs" />
-    <Compile Include="Query.cs" />
-    <Compile Include="Data.cs" />
+    <Compile Include="Algorithms\Query.cs" />
+    <Compile Include="Algorithms\Data.cs" />
     <Compile Include="DefaultForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DefaultForm.Designer.cs">
       <DependentUpon>DefaultForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddServer.cs">
+    <Compile Include="Connect\AddServer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddServer.Designer.cs">
+    <Compile Include="Connect\AddServer.Designer.cs">
       <DependentUpon>AddServer.cs</DependentUpon>
     </Compile>
-    <Compile Include="Connect_to_Server.cs">
+    <Compile Include="Connect\ConnectToServer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Connect_to_Server.Designer.cs">
-      <DependentUpon>Connect_to_Server.cs</DependentUpon>
+    <Compile Include="Connect\ConnectToServer.Designer.cs">
+      <DependentUpon>ConnectToServer.cs</DependentUpon>
     </Compile>
     <Compile Include="GlobalSuppressions.cs" />
-    <Compile Include="Kernel32.cs" />
-    <Compile Include="Loading_Files.cs">
+    <Compile Include="Algorithms\Kernel32.cs" />
+    <Compile Include="LoadingData.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Loading_Files.Designer.cs">
-      <DependentUpon>Loading_Files.cs</DependentUpon>
+    <Compile Include="LoadingData.Designer.cs">
+      <DependentUpon>LoadingData.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Screenshots.cs">
+    <Compile Include="Connect\ConnectForm.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Screenshots.Designer.cs">
-      <DependentUpon>Screenshots.cs</DependentUpon>
+    <Compile Include="Connect\ConnectForm.Designer.cs">
+      <DependentUpon>ConnectForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Settings_Personalization.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Settings_Personalization.Designer.cs">
-      <DependentUpon>Settings_Personalization.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Settings.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Settings.Designer.cs">
+    <EmbeddedResource Include="Settings\Settings.resx">
       <DependentUpon>Settings.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Connect_Form.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Connect_Form.Designer.cs">
-      <DependentUpon>Connect_Form.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Chatlog.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Chatlog.Designer.cs">
-      <DependentUpon>Chatlog.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="About.resx">
-      <DependentUpon>About.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Advanced_settings.resx">
-      <DependentUpon>Advanced_settings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DefaultForm.resx">
       <DependentUpon>DefaultForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddServer.resx">
+    <EmbeddedResource Include="Connect\AddServer.resx">
       <DependentUpon>AddServer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Connect_to_Server.resx">
-      <DependentUpon>Connect_to_Server.cs</DependentUpon>
+    <EmbeddedResource Include="Connect\ConnectToServer.resx">
+      <DependentUpon>ConnectToServer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Loading_Files.resx">
-      <DependentUpon>Loading_Files.cs</DependentUpon>
+    <EmbeddedResource Include="LoadingData.resx">
+      <DependentUpon>LoadingData.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
-    <EmbeddedResource Include="Screenshots.resx">
-      <DependentUpon>Screenshots.cs</DependentUpon>
+    <EmbeddedResource Include="Connect\ConnectForm.resx">
+      <DependentUpon>ConnectForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Settings_Personalization.resx">
-      <DependentUpon>Settings_Personalization.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Settings.resx">
-      <DependentUpon>Settings.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Connect_Form.resx">
-      <DependentUpon>Connect_Form.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Chatlog.resx">
-      <DependentUpon>Chatlog.cs</DependentUpon>
-    </EmbeddedResource>
-    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -193,14 +134,16 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="a_205_a_incercare.ico" />
-    <None Include="Resources\no-wifi-icon-1.png" />
+    <None Include="Resources\loadingAnimation.gif" />
+    <Content Include="Resources\lampIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MetroFramework">
+      <Version>1.2.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="MetroFramework.Design">
+      <Version>1.2.0.3</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
-    <PropertyGroup>
-      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
-    </PropertyGroup>
-    <Error Condition="!Exists('..\packages\SQLite.3.13.0\build\net45\SQLite.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SQLite.3.13.0\build\net45\SQLite.props'))" />
-  </Target>
 </Project>

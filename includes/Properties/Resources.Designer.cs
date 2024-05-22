@@ -47,7 +47,7 @@ namespace LauncherSAMPInt.Properties {
         }
         
         /// <summary>
-        ///   Overrides the current thread's CurrentUICulture property for Counter
+        ///   Overrides the current thread's CurrentUICulture property for all
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -63,9 +63,9 @@ namespace LauncherSAMPInt.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap no_wifi_icon_1 {
+        internal static System.Drawing.Bitmap loadingAnimation {
             get {
-                object obj = ResourceManager.GetObject("no-wifi-icon-1", resourceCulture);
+                object obj = ResourceManager.GetObject("loadingAnimation", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

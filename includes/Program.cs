@@ -16,7 +16,7 @@ namespace LauncherSAMPInt
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Loading_Files());
+            Application.Run(new LoadingData());
         }
     }
 }
