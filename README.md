@@ -1,4 +1,4 @@
-# Launcher SAMP, his alias NeoSAMP
+# Launcher SAMP
 A new launcher for GTA San Andreas Multiplayer. 
 
 This program is open sourced, check the license. 
