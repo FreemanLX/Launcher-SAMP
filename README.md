@@ -1,9 +1,10 @@
 # Launcher SAMP
 A new launcher for GTA San Andreas Multiplayer. 
+This project is archived.
 
 You need to install MetroFramework from Nuget to make it work.
 
-<b> Launcher SA:MP Beta 0.1.1.0 </b>
+<b> Last Update - Launcher SA:MP Beta 0.1.1.0 </b>
 + Complete code refactoring.
 + Removed Chatlog and Screenshots sections as it didn't had any utility.
 + Moved all the settings in only one section.
